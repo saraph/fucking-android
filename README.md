@@ -31,7 +31,7 @@ touch magisk{,32,64,hide.init,policy} resetprop su{,policy}
 
 create your directories to be bound in `/`
 
-`/bin`, `/etc`, `/lib`, `/sbin` all probably exist as symlinks
+`/bin`, `/etc`, `/lib`, `/sbin` probably exist as two symlinks and two directories respectively
 
 if you're rooted with magisk, `/sbin` will be a `tmpfs`
 try doing this from a recovery or unmount `/sbin` (forcefully if need be, you will loose root,
