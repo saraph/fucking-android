@@ -2,11 +2,36 @@
 
 unpack a rootfs of some kind to `/data`
 
+### dealing with no internet
+
+by default android kernels will have a security
+module that restricts access to socket() calls to contexes with the subgroup 3003
+
+edit `/etc/group` to include
+
+```bash
+inet:x:3003:every user that needs networking
+```
+
+otherwise compile your device's kernel without `CONFIG_PARANOID_NETWORK`
+
+### booting with a service manager
+
 edit `/init.rc`
 
 bind mount your rootfs shit to `/`
 
+create the magisk directories and files in your `/data/sbin`
+
+```bash
+cd /data/sbin
+mkdir .magisk
+touch magisk{,32,64,hide.init,policy} resetprop su{,policy}
 ```
+
+modify your android init script
+
+```bash
 on post-fs-data
     # gentoo init
     mount none /data suid remount
