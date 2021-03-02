@@ -83,5 +83,3 @@ on post-fs-data
     # openrc time!!!
     exec - root root -- /bin/su --command /sbin/openrc root default
 ```
-
-if you have magisk, suffer, it wants to use /sbin
