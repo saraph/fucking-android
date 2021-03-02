@@ -98,3 +98,7 @@ on post-fs-data
     # openrc time!!!
     exec - root root -- /bin/su --command /sbin/openrc root default
 ```
+
+for the highest chance of booting, remove almost everything from your runlevel
+
+i have only sshd enabled in my default runlevel
