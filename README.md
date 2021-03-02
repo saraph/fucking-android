@@ -31,9 +31,24 @@ touch magisk{,32,64,hide.init,policy} resetprop su{,policy}
 
 create your directories to be bound in `/`
 
+`/bin`, `/etc`, `/lib`, `/sbin` all probably exist as symlinks
+
+if you're rooted with magisk, `/sbin` will be a `tmpfs`
+try doing this from a recovery or unmount `/sbin` (forcefully if need be, you will loose root,
+so keep your root shell open!!!!!)
+
 ```bash
 mount -o rw,remount /
-mkdir /{bin,etc,home.lib,lib64,root,run,usr,var,tmp}
+rm -rf /bin /etc /lib /sbin
+mkdir /{bin,etc,home.lib,lib64,root,run,sbin,usr,var,tmp}
+```
+
+copy required files to their expected locations else shit breaks
+
+```bash
+cp /system/etc/{cgroups.json,libnfc-nci.conf} /etc
+cp /system/etc/{cgroups.json,libnfc-nci.conf} /data/etc
+chmod a+r /etc /data/etc
 ```
 
 modify your android init script
