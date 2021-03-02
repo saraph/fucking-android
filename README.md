@@ -29,6 +29,13 @@ mkdir .magisk
 touch magisk{,32,64,hide.init,policy} resetprop su{,policy}
 ```
 
+create your directories to be bound in `/`
+
+```bash
+mount -o rw,remount /
+mkdir /{bin,etc,home.lib,lib64,root,run,usr,var,tmp}
+```
+
 modify your android init script
 
 ```bash
@@ -37,6 +44,7 @@ on post-fs-data
     mount none /data suid remount
     mount none /data/bin /bin bind
     mount none /data/etc /etc bind
+    mount none /data/home /home bind
     mount none /data/lib /lib bind
     mount none /data/lib64 /lib64 bind
     mount none /data/root /root bind
@@ -68,6 +76,7 @@ on post-fs-data
     mount none /data/sbin/su /sbin/su bind
     mount none /data/sbin/supolicy /sbin/supoilcy bind
 
+    mount none /data/tmp /tmp bind
     mount none /data/usr /usr bind
     mount none /data/var /var bind
 
