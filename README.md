@@ -101,4 +101,4 @@ on post-fs-data
 
 for the highest chance of booting, remove almost everything from your runlevel
 
-i have only sshd enabled in my default runlevel
+i have only sshd enabled in my default runlevels
