@@ -17,7 +17,7 @@ otherwise compile your device's kernel without `CONFIG_PARANOID_NETWORK`
 
 ### booting with a service manager
 
-edit `/init.rc`
+edit `/init.rc` (on android android 11 it's located in `/system/etc/init/hw/init.rc`)
 
 bind mount your rootfs shit to `/`
 
@@ -52,8 +52,6 @@ chmod a+r /etc /data/etc
 ```
 
 modify your android init script
-
-on android android 11 it's located in `/system/etc/init/hw/init.rc`, prior it's located in `/init.rc`
 
 ```bash
 on post-fs-data
