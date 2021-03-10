@@ -53,6 +53,8 @@ chmod a+r /etc /data/etc
 
 modify your android init script
 
+on android android 11 it's located in `/system/etc/init/hw/init.rc`, prior it's located in `/init.rc`
+
 ```bash
 on post-fs-data
     # gentoo init
