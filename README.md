@@ -1,5 +1,7 @@
 # fucking-android
 
+![pepe](pepe.png)
+
 unpack a rootfs of some kind to `/data`
 
 ### dealing with no internet
