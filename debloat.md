@@ -1,10 +1,10 @@
 In directory `/system/app`:
 
 
-| File or directory          | Safe to remove? |
-| -------------------------- | --------------- |
-| `AASAservice`              | Safe            |
-| `ARCore`                   | Safe            |
+| File or directory          | Safe to remove? | Description            |
+| -------------------------- | --------------- | ---------------------- |
+| `AASAservice`              | Safe            | Samsung Knox Component |
+| `ARCore`                   | Safe            | Google AR SDK          |
 | `ARDrawing`                | Safe            |
 | `ARZone`                   | Safe            |
 | `AllShareAware`            | Safe            |
