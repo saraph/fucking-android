@@ -1,4 +1,4 @@
-In directory `/system/framework`
+In directory `/system/framework`:
 
 Important (cause boot failure if removed)
 
