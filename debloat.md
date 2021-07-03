@@ -1,15 +1,15 @@
 In directory `/system/app`:
 
 
-| File or directory          | Safe to remove? | Description            |
-| -------------------------- | --------------- | ---------------------- |
-| `AASAservice`              | Safe            | Samsung Knox Component |
-| `ARCore`                   | Safe            | Google AR SDK          |
-| `ARDrawing`                | Safe            |
-| `ARZone`                   | Safe            |
-| `AllShareAware`            | Safe            |
-| `AllshareFileShare`        | Safe            |
-| `AllshareMediaShare`       | Safe            |
+| File or directory          | Safe to remove? | Description             |
+| -------------------------- | --------------- | ----------------------- |
+| `AASAservice`              | Safe            | Samsung Knox Component  |
+| `ARCore`                   | Safe            | Google AR SDK           |
+| `ARDrawing`                | Safe            | Samsung AR Drawing?     |
+| `ARZone`                   | Safe            | Samsung AR SDK?         |
+| `AllShareAware`            | Safe            | Samsung Sharing Spyware | 
+| `AllshareFileShare`        | Safe            | Samsung Sharing Spyware | 
+| `AllshareMediaShare`       | Safe            | Samsung Sharing Spyware | 
 | `ApexService`              | Unsafe          |
 | `AppLinker`                | Unsafe          |
 | `AutomationTest_FB`        | Safe            |
