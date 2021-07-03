@@ -1,20 +1,20 @@
 In directory `/system/app`:
 
 
-| File or directory          | Safe to remove? | Description             |
-| -------------------------- | --------------- | ----------------------- |
-| `AASAservice`              | Safe            | Samsung Knox Component  |
-| `ARCore`                   | Safe            | Google AR SDK           |
-| `ARDrawing`                | Safe            | Samsung AR Drawing?     |
-| `ARZone`                   | Safe            | Samsung AR SDK?         |
-| `AllShareAware`            | Safe            | Samsung Sharing Spyware | 
-| `AllshareFileShare`        | Safe            | Samsung Sharing Spyware | 
-| `AllshareMediaShare`       | Safe            | Samsung Sharing Spyware | 
-| `ApexService`              | Unsafe          |
-| `AppLinker`                | Unsafe          |
-| `AutomationTest_FB`        | Safe            |
-| `BBCAgent`                 | Safe            |
-| `BCService`                | Safe            |
+| File or directory          | Safe to remove? | Description                    |
+| -------------------------- | --------------- | ------------------------------ |
+| `AASAservice`              | Safe            | Samsung Knox Component         |
+| `ARCore`                   | Safe            | Google AR SDK                  |
+| `ARDrawing`                | Safe            | Samsung AR Drawing?            |
+| `ARZone`                   | Safe            | Samsung AR SDK?                |
+| `AllShareAware`            | Safe            | Samsung Sharing Spyware        |
+| `AllshareFileShare`        | Safe            | Samsung Sharing Spyware        |
+| `AllshareMediaShare`       | Safe            | Samsung Sharing Spyware        |
+| `ApexService`              | Unsafe          | `/apex` manager?               |
+| `AppLinker`                | Unsafe          | APK linker?                    |
+| `AutomationTest_FB`        | Safe            | Samsung Debugging              |
+| `BBCAgent`                 | Safe            | Samsung Knox Component         |
+| `BCService`                | Safe            | "Special" Phone Code Provider? |
 | `BGMProvider`              | Safe            |
 | `BasicDreams`              | Safe            |
 | `Bluetooth`                | Unsafe          |
