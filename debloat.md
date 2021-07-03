@@ -1,7 +1,16 @@
+In directory `/system/framework`
+
 Important (cause boot failure if removed)
 
-- `/system/framework/boot-knoxanalyticssdk.vdex`
-- `/system/framework/boot-knoxsdk.vdex`
-- `/system/framework/fipstimakeystore.jar`
+- `boot-knoxanalyticssdk.vdex`
+- `boot-knoxsdk.vdex`
+- `fipstimakeystore.jar`
 
 Irrelevant (safely removed)
+
+- `com.dsi.ant.antradio_library.jar`
+- `gamemanager.jar`
+- `gamesdk.jar`
+- `gamesdkWrapper.jar`
+- `perfsdk.jar`
+- `perfsdkservice.jar`
